@@ -1,0 +1,404 @@
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    src/main/java/com/employee/EmployeeappApplication.java -> src/main/java/com/cg/employee/EmployeeappApplication.java
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git commit -m "Commited on 13 Dec 2024"
+[main 9bb5aa4] Commited on 13 Dec 2024
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename src/main/java/com/{ => cg}/employee/EmployeeappApplication.java (100%)
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git branch -M main
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git remote add origin https://github.com/sadabjavadev/employeeapp.git
+error: remote origin already exists.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 473 bytes | 157.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/khansadab/employeeapp.git
+   efb4c09..9bb5aa4  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git commit -a
+Aborting commit due to empty commit message.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git remote add origin https://github.com/sadabjavadev/employeeapp.git
+error: remote origin already exists.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git branch -M main
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git init
+Reinitialized existing Git repository in F:/Sadab/eclipseDirectory25June2024/employeeapp/.git/
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git add README.md
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    target/classes/com/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/resources/GitInfo
+        target/classes/GitInfo
+        target/classes/com/cg/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git add .
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        new file:   src/main/resources/GitInfo
+        new file:   target/classes/GitInfo
+        renamed:    target/classes/com/employee/EmployeeappApplication.class -> target/classes/com/cg/employee/EmployeeappApplication.class
+
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        new file:   src/main/resources/GitInfo
+        new file:   target/classes/GitInfo
+        renamed:    target/classes/com/employee/EmployeeappApplication.class -> target/classes/com/cg/employee/EmployeeappApplication.class
+
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        new file:   src/main/resources/GitInfo
+        new file:   target/classes/GitInfo
+        renamed:    target/classes/com/employee/EmployeeappApplication.class -> target/classes/com/cg/employee/EmployeeappApplication.class
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   .springBeans
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        new file:   src/main/resources/GitInfo
+        new file:   target/classes/GitInfo
+        renamed:    target/classes/com/employee/EmployeeappApplication.class -> target/classes/com/cg/employee/EmployeeappApplication.class
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    src/main/resources/GitInfo
+        modified:   src/main/resources/application.properties
+        deleted:    target/classes/GitInfo
+        modified:   target/classes/application.properties
+        modified:   target/classes/com/cg/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/java/com/cg/employee/controller/
+        src/main/java/com/cg/employee/entity/
+        src/main/java/com/cg/employee/repository/
+        src/main/java/com/cg/employee/service/
+        target/classes/com/cg/employee/controller/
+        target/classes/com/cg/employee/entity/
+        target/classes/com/cg/employee/repository/
+        target/classes/com/cg/employee/service/
+
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git commit -m "Commited on 13 Dec 2024 at 11.54 pm"
+[main 498e1a1] Commited on 13 Dec 2024 at 11.54 pm
+ 5 files changed, 12 insertions(+), 2 deletions(-)
+ create mode 100644 src/main/resources/GitInfo
+ create mode 100644 target/classes/GitInfo
+ rename target/classes/com/{ => cg}/employee/EmployeeappApplication.class (68%)
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    src/main/resources/GitInfo
+        modified:   src/main/resources/application.properties
+        deleted:    target/classes/GitInfo
+        modified:   target/classes/application.properties
+        modified:   target/classes/com/cg/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/java/com/cg/employee/controller/
+        src/main/java/com/cg/employee/entity/
+        src/main/java/com/cg/employee/repository/
+        src/main/java/com/cg/employee/service/
+        target/classes/com/cg/employee/controller/
+        target/classes/com/cg/employee/entity/
+        target/classes/com/cg/employee/repository/
+        target/classes/com/cg/employee/service/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Enumerating objects: 31, done.
+Counting objects: 100% (31/31), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (18/18), 1.69 KiB | 575.00 KiB/s, done.
+Total 18 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/khansadab/employeeapp.git
+   9bb5aa4..498e1a1  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   src/main/java/com/cg/employee/EmployeeappApplication.java
+        deleted:    src/main/resources/GitInfo
+        modified:   src/main/resources/application.properties
+        deleted:    target/classes/GitInfo
+        modified:   target/classes/application.properties
+        modified:   target/classes/com/cg/employee/EmployeeappApplication.class
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        src/main/java/com/cg/employee/controller/
+        src/main/java/com/cg/employee/entity/
+        src/main/java/com/cg/employee/repository/
+        src/main/java/com/cg/employee/service/
+        target/classes/com/cg/employee/controller/
+        target/classes/com/cg/employee/entity/
+        target/classes/com/cg/employee/repository/
+        target/classes/com/cg/employee/service/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git add .
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git commit -m "Commited on 13 Dec 2024 at 11.54 pm"
+[main 9bfc396] Commited on 13 Dec 2024 at 11.54 pm
+ 16 files changed, 347 insertions(+), 14 deletions(-)
+ create mode 100644 src/main/java/com/cg/employee/controller/EmployeeController.java
+ create mode 100644 src/main/java/com/cg/employee/entity/Employee.java
+ create mode 100644 src/main/java/com/cg/employee/repository/EmployeeRepository.java
+ create mode 100644 src/main/java/com/cg/employee/service/EmployeeService.java
+ create mode 100644 src/main/java/com/cg/employee/service/EmployeeServiceImpl.java
+ delete mode 100644 src/main/resources/GitInfo
+ delete mode 100644 target/classes/GitInfo
+ create mode 100644 target/classes/com/cg/employee/controller/EmployeeController.class
+ create mode 100644 target/classes/com/cg/employee/entity/Employee.class
+ create mode 100644 target/classes/com/cg/employee/repository/EmployeeRepository.class
+ create mode 100644 target/classes/com/cg/employee/service/EmployeeService.class
+ create mode 100644 target/classes/com/cg/employee/service/EmployeeServiceImpl.class
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git push -u origin main
+Enumerating objects: 50, done.
+Counting objects: 100% (50/50), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (28/28), done.
+Writing objects: 100% (35/35), 8.73 KiB | 2.18 MiB/s, done.
+Total 35 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 3 local objects.
+To https://github.com/khansadab/employeeapp.git
+   498e1a1..9bfc396  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/employeeapp (main)
+$
+==================================================
+$ git status
+$ git commit -m "Commited on 13 Dec 2024 at 11.54 pm"
+$ git status
+$ git push -u origin main
+$ git status
+$ git add .
+$ git commit -m "Commited on 13 Dec 2024 at 11.56 pm"
+$ git push -u origin main
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
