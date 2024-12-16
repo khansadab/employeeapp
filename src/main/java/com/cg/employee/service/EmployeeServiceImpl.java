@@ -1,5 +1,7 @@
 package com.cg.employee.service;
 
+import java.util.Optional;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.cg.employee.entity.Employee;
+import com.cg.employee.exceptions.EmployeeNotFoundException;
 import com.cg.employee.repository.EmployeeRepository;
 
 
@@ -63,13 +66,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public ResponseEntity<?> getEmployeeById(Integer id) {
 		try {
 			if(id != null) {
-				responseEntity = new ResponseEntity<>(employeeRepository.findById(id),HttpStatus.OK);
-				logger.info("Employee data fatched from database");
+				Employee empObj = employeeRepository.findById(id).orElseThrow(()-> new EmployeeNotFoundException("Employee not found based on id "+id));
+				if(empObj != null) {
+					responseEntity = new ResponseEntity<>(empObj,HttpStatus.OK);
+					logger.info("Employee data fatched from database");	
+				}
+				
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			logger.error("Employee data not save into database");
+			logger.error("Employee data not fatched from database");
 			responseEntity = new ResponseEntity<>("Employee not found based on id "+id, HttpStatus.NOT_FOUND);
 		
 		}
@@ -80,7 +87,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public ResponseEntity<?> updateEmployee(Employee employee) {
 		try {
 			if(employee.getId() != null) {
-				Employee empDbObj = employeeRepository.findById(employee.getId()).get();
+				Employee empDbObj = employeeRepository.findById(employee.getId()).orElseThrow(()-> new EmployeeNotFoundException("Employee not found based on id "+employee.getId()));
 				if(empDbObj != null) {
 					empDbObj.setFirstName(employee.getFirstName());
 					empDbObj.setLastName(employee.getLastName());
@@ -90,16 +97,17 @@ public class EmployeeServiceImpl implements EmployeeService {
 					empDbObj.setSalary(employee.getSalary());
 					empDbObj.setDepartment(employee.getDepartment());
 					empDbObj.setRole(employee.getRole());
+					responseEntity = new ResponseEntity<>(employeeRepository.save(empDbObj),HttpStatus.OK);
+					logger.info("Employee data updated and saved into database");
 					
 				}
-				responseEntity = new ResponseEntity<>(employeeRepository.save(empDbObj),HttpStatus.OK);
-				logger.info("Employee data updated and saved into database");
+	
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 			logger.error("Employee data not updated");
-			responseEntity = new ResponseEntity<>("Employee data not updated ! please try after sometime", HttpStatus.INTERNAL_SERVER_ERROR);
+			responseEntity = new ResponseEntity<>("Employee not found based on id "+employee.getId(), HttpStatus.INTERNAL_SERVER_ERROR);
 		
 		}
 		return responseEntity;
@@ -109,14 +117,18 @@ public class EmployeeServiceImpl implements EmployeeService {
 	public ResponseEntity<?> deleteEmployeeById(Integer id) {
 		try {
 			if(id != null) {
-				employeeRepository.deleteById(id);
-				responseEntity = new ResponseEntity<>("Employee deleted",HttpStatus.OK);
-				logger.info("Employee data deleted from database");
+				Employee empObj = employeeRepository.findById(id).orElseThrow(() -> new EmployeeNotFoundException("Employee not found based on id "+id));
+				if(empObj.getId() != null) {
+					employeeRepository.deleteById(id);
+					responseEntity = new ResponseEntity<>("Employee deleted",HttpStatus.OK);
+					logger.info("Employee data deleted from database");
+				}
+				
 			}
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-			logger.error("Employee data not found to delete based on id "+id);
+			logger.error("Employee not found to delete based on id "+id);
 			responseEntity = new ResponseEntity<>("Employee data not found to delete based on id "+id, HttpStatus.NOT_FOUND);
 		
 		}
