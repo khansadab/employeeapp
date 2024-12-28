@@ -390,10 +390,6 @@ Mohammad Pappu@DESKTOP-HTLRHQ3 MINGW64 /f/Sadab/eclipseDirectory25June2024/emplo
 $
 ==================================================
 $ git status
-$ git commit -m "Commited on 13 Dec 2024 at 11.54 pm"
-$ git status
-$ git push -u origin main
-$ git status
 $ git add .
 $ git commit -m "Commited on 13 Dec 2024 at 11.56 pm"
 $ git push -u origin main
