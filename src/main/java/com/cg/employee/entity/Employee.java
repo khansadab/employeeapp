@@ -30,7 +30,7 @@ public class Employee implements Serializable {
 	@Column(name = "gender")
 	private String gender;
 	@Column(name = "phone")
-	private Long phone;
+	private String phone;
 	@Column(name = "salary")
 	private String salary;
 	@Column(name = "department")
@@ -42,7 +42,7 @@ public class Employee implements Serializable {
 
 	}
 
-	public Employee(Integer id, String firstName, String lastName, String email, String gender, Long phone,
+	public Employee(Integer id, String firstName, String lastName, String email, String gender, String phone,
 			String salary, String department, String role) {
 		this.id = id;
 		this.firstName = firstName;
@@ -95,11 +95,11 @@ public class Employee implements Serializable {
 		this.gender = gender;
 	}
 
-	public Long getPhone() {
+	public String getPhone() {
 		return phone;
 	}
 
-	public void setPhone(Long phone) {
+	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
@@ -126,5 +126,14 @@ public class Employee implements Serializable {
 	public void setRole(String role) {
 		this.role = role;
 	}
+
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email
+				+ ", gender=" + gender + ", phone=" + phone + ", salary=" + salary + ", department=" + department
+				+ ", role=" + role + "]";
+	}
+	
+	
 
 }
